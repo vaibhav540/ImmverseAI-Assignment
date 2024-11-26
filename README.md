@@ -37,9 +37,5 @@ git clone https://github.com/vaibhav540/ImmverseAI-Assignment.git
 cd ImmverseAI-APP
 
 
-screenshots:-
-
-largere screen size :-
-![Screenshot (134)](https://github.com/user-attachments/assets/21ea205b-3a0a-4640-a76a-8b38f118517e)
 
 
