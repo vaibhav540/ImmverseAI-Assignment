@@ -15,7 +15,7 @@ const Navbar = ({ profileImage, handleImageChange }) => {
   }, []);
 
   return (
-    <nav style={navbarStyle}>
+    <nav style={{ ...navbarStyle, width: isMobile ? '100%' : 'auto' }}>
       <div style={logoContainerStyle}>
         <img src="/immverse_ai_logo.jpeg" alt="ImmverseAI Logo" style={logoStyle} />
       </div>
