@@ -15,7 +15,7 @@ const Navbar = ({ profileImage, handleImageChange }) => {
   }, []);
 
   return (
-    <nav className="container-fluid" style={navbarStyle}>
+    <nav  style={navbarStyle}>
       <div style={logoContainerStyle}>
         <img src="/immverse_ai_logo.jpeg" alt="ImmverseAI Logo" style={logoStyle} />
       </div>
