@@ -6,7 +6,7 @@ This project provides a **responsive sidebar** and **sticky navbar** solution us
 
 You can view the live version of this application here:
 
-[**Live Demo**](https://immverseai-author-vaibhavmore-ui.netlify.app/)
+[**Live Demo**](https://immverseai-author-vaibhavmore20.netlify.app/)
 
 ## Features
 
