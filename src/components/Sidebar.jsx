@@ -83,11 +83,12 @@ const menuItems = [
 const sidebarStyle = {
   width: '250px',
   background: '#F5F6FA',
-  padding: '20px',
+  padding: '10px',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
   height: '100vh', 
+  margin:0,
 };
 
 const sidebarMobileStyle = {

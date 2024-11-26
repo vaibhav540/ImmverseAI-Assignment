@@ -6,34 +6,34 @@ import Navbar from './components/Navbar';
 const App = () => {
   const [profileImage, setProfileImage] = useState('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTutp6Rf6nH24hRGK5NBsW5LFII03lUqcgLNQ&s');
   const [userName, setUserName] = useState('Avishkar Watmode');
-  const [showNameModal, setShowNameModal] = useState(false);  
-  const [newName, setNewName] = useState(''); 
+  const [showNameModal, setShowNameModal] = useState(false);
+  const [newName, setNewName] = useState('');
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        setProfileImage(reader.result); 
+        setProfileImage(reader.result);
       };
-      reader.readAsDataURL(file); 
+      reader.readAsDataURL(file);
     }
 
     setShowNameModal(true);
   };
 
   const handleNameChange = () => {
-    setUserName(newName);  
-    setShowNameModal(false); 
-    setNewName('');  
+    setUserName(newName);
+    setShowNameModal(false);
+    setNewName('');
   };
 
   return (
-    <div className='container'  style={{ display: 'flex', flexDirection: 'column', height: '100vh', fontFamily: 'Arial, sans-serif' }}>
-      <Navbar profileImage={profileImage} handleImageChange={handleImageChange} />
-      <div style={{ display: 'flex', flex: 1 }}>
-        <Sidebar />
-        <Dashboard profileImage={profileImage} userName={userName} />
+    <div className='container' style={{ display: 'flex', flexDirection: 'column', height: '100vh', fontFamily: 'Arial, sans-serif' }}>
+      <Navbar style={{margin:0,padding:0}} profileImage={profileImage} handleImageChange={handleImageChange} />
+      <div style={{ display: 'flex', flex: 1, margin:0,padding:0 }}>
+        <Sidebar style={{margin:0,padding:0,}} />
+        <Dashboard style={{margin:0,padding:0}} profileImage={profileImage} userName={userName} />
       </div>
 
       {showNameModal && (

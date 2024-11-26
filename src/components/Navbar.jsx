@@ -15,11 +15,10 @@ const Navbar = ({ profileImage, handleImageChange }) => {
   }, []);
 
   return (
-    <nav  style={navbarStyle}>
+    <nav style={navbarStyle}>
       <div style={logoContainerStyle}>
         <img src="/immverse_ai_logo.jpeg" alt="ImmverseAI Logo" style={logoStyle} />
       </div>
-
       {isMobile ? (
         <div style={profileContainerStyle}>
           <label htmlFor="profile-image-upload" style={profileImageContainerStyle}>
@@ -37,12 +36,9 @@ const Navbar = ({ profileImage, handleImageChange }) => {
         <>
           <ul style={navLinksStyle}>
             {['Home', 'Dashboard', 'Category', 'Validate Certificate'].map((link, index) => (
-              <li key={index} style={navLinkStyle}>
-                {link}
-              </li>
+              <li key={index} style={navLinkStyle}>{link}</li>
             ))}
           </ul>
-
           <div style={profileContainerStyle}>
             <span style={notificationIconStyle}>🔔</span>
             <span style={darkModeIconStyle}>🌙</span>
@@ -70,21 +66,15 @@ const navbarStyle = {
   justifyContent: 'space-between',
   alignItems: 'center',
   backgroundColor: '#fff',
-  padding: '10px 20px',
+  padding: '15px 20px',
   borderBottom: '1px solid #ddd',
   boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
   zIndex: 1000,
 };
 
-const logoContainerStyle = {
-  display: 'flex',
-  alignItems: 'center',
-};
+const logoContainerStyle = { display: 'flex', alignItems: 'center' };
 
-const logoStyle = {
-  height: '50px',
-  width: 'auto',
-};
+const logoStyle = { height: '50px', width: 'auto' };
 
 const navLinksStyle = {
   display: 'flex',
@@ -101,10 +91,7 @@ const navLinkStyle = {
   fontWeight: '500',
 };
 
-const profileContainerStyle = {
-  display: 'flex',
-  alignItems: 'center',
-};
+const profileContainerStyle = { display: 'flex', alignItems: 'center' };
 
 const notificationIconStyle = {
   marginRight: '15px',
@@ -125,8 +112,6 @@ const profileImageStyle = {
   objectFit: 'cover',
 };
 
-const profileImageContainerStyle = {
-  cursor: 'pointer',
-};
+const profileImageContainerStyle = { cursor: 'pointer' };
 
 export default Navbar;

@@ -184,7 +184,8 @@ const MyLearningPath = () => {
 const dashboardStyle = {
   flex: 1,
   background: '#F9FAFD',
-  padding: '20px',
+  padding: '10px',
+  margin:0,
 };
 
 const headerStyle = {
